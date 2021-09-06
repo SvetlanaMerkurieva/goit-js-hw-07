@@ -1,14 +1,15 @@
 const counterValueEl = document.querySelector("#value");
-counterValueEl.textContent = "";
-console.log(counterValueEl);
-/*function decrement () {
-    return counterValue += 1;
+const counterValueStr = counterValueEl.textContent;
+let counterValue = Number(counterValueStr);
+function decrement() {
+    counterValueEl.textContent = counterValue -= 1;
 };
-function increment () {
-    return counterValue -= 1;
+function increment() {
+    counterValueEl.textContent = counterValue += 1;
 };
-const counterAddEl = document.querySelector("#decrement");
-counterAddEl.addIventListener("click", decrement);
-const counterSubtractEl = document.querySelector("#increment");
-counterSubtractEl.addIventListener("click", increment);*/
+
+const counterSubtractEl = document.querySelector('[data-action="decrement"]');
+counterSubtractEl.addEventListener("click", decrement);
+const counterAddEl = document.querySelector('[data-action="increment"]');
+counterAddEl.addEventListener("click", increment);
 
