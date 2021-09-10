@@ -6,4 +6,6 @@ const onNameInput = inputEl.addEventListener("input", (event) => {
     if (event.currentTarget.value === "") {
         spanEl.textContent = "незнакомец";
     };
+    /*Вариант от ментора
+    event.currentTarget.value === "" ? spanEl.textContent = "незнакомец" : spanEl.textContent = event.currentTarget.value;*/
 });

@@ -3,7 +3,7 @@ const btnCreateEl = document.querySelector('[data-action="render"]');
 const btnClearEl = document.querySelector('[data-action="destroy"]');
 const mainDivEl = document.querySelector("#boxes");
 
-inputEl.addEventListener("input", () => {});
+/*inputEl.addEventListener("input", () => {});*/
     function onCreateDivs() {
         const divsArr = [];
         for (let i = 0; i < Number(inputEl.value); i += 1) {

@@ -8,5 +8,9 @@ inputEl.addEventListener("blur", () => {
     } else {
         inputEl.classList.remove("valid");
         inputEl.classList.add("invalid");
-    }
+    };
+   /*Вариант от ментора 
+    Number(dataLength) === inputEl.value.length 
+    ? inputEl.classList.add("valid") & inputEl.classList.remove("invalid") 
+    : inputEl.classList.add("invalid") & inputEl.classList.add("invalid");*/
 });
